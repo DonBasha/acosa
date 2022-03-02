@@ -3,6 +3,7 @@ require('../scss/style.scss');
 
 /********** Paste your code here! ************/
 
+<<<<<<< Updated upstream
 $(window).on("scroll",()=>{
   const scroll=$(window).scrollTop()
   if(scroll>0){
@@ -13,4 +14,14 @@ $(window).on("scroll",()=>{
 })
 $(window).on("load",()=>{
   $("#loader").fadeOut()
+=======
+$(window).on("scroll", () => {
+    const scroll = $(window).scrollTop()
+    console.log(scroll)
+    if (scroll > 0) {
+        $("header").addClass("isScrolling")
+    } else {
+        $("header").removeClass("isScrolling")
+    }
+>>>>>>> Stashed changes
 })
