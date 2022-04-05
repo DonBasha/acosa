@@ -49,17 +49,17 @@ h5 {
   display: inline-block;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
-  }
+}
 
-  @keyframes rotation {
+@keyframes rotation {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
-  } 
-#loader{
+}
+#loader {
   background-color: white;
   position: fixed;
   z-index: 99;
@@ -70,33 +70,19 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
-}  
+}
 header {
   transition: $transition;
-<<<<<<< Updated upstream
-  &.iScrolling{
+  &.iScrolling {
     background-color: #fff;
-  #logo{
-    img{
-      height: 60px;
-    }
-  }
-.header-wrapper{
-  
-  padding: 5px 0;
-}
-=======
-  &.isScrolling{
-    background-color: white;
-    #logo{
-      img{
+    #logo {
+      img {
         height: 60px;
       }
     }
-    .header-wrapper{
+    .header-wrapper {
       padding: 5px 0;
     }
->>>>>>> Stashed changes
   }
   position: fixed;
   z-index: 9;
@@ -113,16 +99,9 @@ header {
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
-<<<<<<< Updated upstream
-    #logo{
-      img{
-      transition: $transition;
-=======
-    transition: $transition;
-    #logo{
-      img{
+    #logo {
+      img {
         transition: $transition;
->>>>>>> Stashed changes
       }
     }
     ul {
@@ -310,7 +289,6 @@ header {
   background-color: #fff;
   transition: $transition;
   position: relative;
-  background-color: white;
   &::before {
     content: "";
     width: 100%;
@@ -388,62 +366,6 @@ header {
   }
 }
 
-<<<<<<< Updated upstream
-#news{
-  position: relative;
-  overflow: hidden;
-  &::before{
-    content:'';
-    height: 100vh;
-    width: 100vh;
-    position: absolute;
-    right: -25%;
-    top: 10%;
-    border-radius: 100%;
-    background-color: $red;
-    opacity: .1;
-    z-index: -1;
-  }
-}
-
-#contact{
-  &::before{
-    transform: rotate(180deg);
-    top: 10%;
-    left: 20%;
-  }
-  .contact-form{
-    position: relative;
-    z-index: 5;
-    background-color: #fff;
-    border-radius: 40px 40px 40px 0;
-    padding: 30px 40px;
-    box-shadow: 0 0 10px rgba(28, 54, 140, 0.16);
-    h1{
-      margin: 0;
-    }
-    p{
-      font-weight: bold;
-      margin: 30px 0;
-    }
-    h6{
-      color:$blue;
-    }
-    form{
-      display: flex;
-      margin-top: 20px;
-      gap:20px;
-      input{
-        width: 100%;
-        border-radius: 10px;
-        border-width: 1px;
-        outline: none;
-        padding: 10px 20px;
-        border-color: $black;
-        transition: $transition;
-        &:hover,
-        &:focus{
-=======
 #news {
   position: relative;
   overflow: hidden;
@@ -452,51 +374,28 @@ header {
     height: 100vh;
     width: 100vh;
     position: absolute;
-    right: -50%;
+    right: -25%;
     top: 10%;
+    border-radius: 100%;
+    background-color: $red;
     opacity: 0.1;
     z-index: -1;
-    background-color: $red;
-    border-radius: 100%;
   }
 }
+
 #contact {
-  min-height: 100vh;
   &::before {
     transform: rotate(180deg);
-    right: -50%;
     top: 10%;
     left: 20%;
   }
-
   .contact-form {
     position: relative;
     z-index: 5;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(28, 54, 140, 0.16);
-    padding: 30px 40px;
+    background-color: #fff;
     border-radius: 40px 40px 40px 0;
-    form {
-      display: flex;
-      margin-top: 20px;
-      gap: 20px;
-      input {
-        width: 100%;
-        border-radius: 10px;
-        border-color: $black;
-        border-width: 1px;
-        outline: none;
-        padding: 10px 20px;
-        transition: $transition;
-        &:hover,
-        &:focus {
->>>>>>> Stashed changes
-          border-color: $red;
-        }
-      }
-    }
-<<<<<<< Updated upstream
-=======
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(28, 54, 140, 0.16);
     h1 {
       margin: 0;
     }
@@ -504,12 +403,27 @@ header {
       font-weight: bold;
       margin: 30px 0;
     }
-    span {
-    }
     h6 {
-      color: blue;
+      color: $blue;
     }
->>>>>>> Stashed changes
+    form {
+      display: flex;
+      margin-top: 20px;
+      gap: 20px;
+      input {
+        width: 100%;
+        border-radius: 10px;
+        border-width: 1px;
+        outline: none;
+        padding: 10px 20px;
+        border-color: $black;
+        transition: $transition;
+        &:hover,
+        &:focus {
+          border-color: $red;
+        }
+      }
+    }
   }
   .scene {
     position: relative;
